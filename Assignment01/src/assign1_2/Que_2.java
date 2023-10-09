@@ -1,8 +1,12 @@
 package assign1_2;
 
+/*2. Accept 2 double values from User (using Scanner). Check data type. If arguments are not
+doubles, supply suitable error message & terminate.
+If numbers are double values, print its average. */
+
 import java.util.Scanner;
 
-public class que_2 {
+public class Que_2 {
 
 	public static void main(String[] args) {
       Scanner s = new Scanner(System.in);

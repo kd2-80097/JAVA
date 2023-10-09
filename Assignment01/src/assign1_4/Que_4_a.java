@@ -1,6 +1,14 @@
 package assign1_4;
 
-public class que_4_a {
+/* 4. Write a program to generate following pattern
+a)
+         *
+        * *
+       * * *
+      * * * *
+     * * * * *     */
+
+public class Que_4_a {
 
 	public static void main(String[] args) {
 
