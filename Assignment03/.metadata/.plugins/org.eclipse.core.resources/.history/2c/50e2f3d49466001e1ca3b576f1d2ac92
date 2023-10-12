@@ -1,0 +1,28 @@
+package assign03;
+
+
+class CreditLimit{
+	
+	private int acc_no = 0;
+	private int startMonthBalance = 0;
+	private int totalMonthItem = 0;
+	private int totalMonthCredit = 0;
+	private int creditLimit = 0;
+	
+	public CreditLimit()
+	{
+	}
+	
+	CreditLimit
+	
+	
+}
+public class Que_1 {
+	
+
+	public static void main(String[] args) {
+ 
+		
+	}
+
+}

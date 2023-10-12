@@ -1,0 +1,20 @@
+package tester;
+
+import java.util.Scanner;
+
+import com.app.geometry.*;
+
+public class TestPointArray {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int size;
+		System.out.println("Enter the no. of Points = ");
+		size = sc.nextInt();
+		
+		Point2D [] point = new Point2D[size];
+		
+	}
+
+}

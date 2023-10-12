@@ -1,0 +1,102 @@
+package drivingCostCalculator;
+
+import java.util.Scanner;
+
+/* Q3. Create an application that calculates your daily driving cost, 
+ so that you can estimate how much money could be saved by car pooling, 
+ which also has other advantages such as reducing carbon emissions 
+ and reducing traffic congestion. The application should input the following information
+ and display the user’s cost per day of driving to work:
+ a) Total miles driven per day.
+ b) Cost per gallon of gasoline.
+ c) Average miles per gallon.
+ d) Parking fees per day.
+ e) Tolls per day.                   */
+
+public class DrivingCost {
+
+	private int milesDrivenPerDay;
+	private double costPerGallon;
+	private int avgMilesPerGallon;
+	private int parkingFeePerDay;
+	private int tollPerDay;
+	
+	public DrivingCost() {
+		this.milesDrivenPerDay = 0;
+		this.costPerGallon = 0.00;
+		this.avgMilesPerGallon = 0;
+		this.parkingFeePerDay = 0;
+		this.tollPerDay = 0;
+	}
+
+	public DrivingCost(int milesDrivenPerDay, double costPerGallon, int avgMilesPerGallon, int parkingFeePerDay,
+			int tollPerDay) {
+		super();
+		this.milesDrivenPerDay = milesDrivenPerDay;
+		this.costPerGallon = costPerGallon;
+		this.avgMilesPerGallon = avgMilesPerGallon;
+		this.parkingFeePerDay = parkingFeePerDay;
+		this.tollPerDay = tollPerDay;
+	}
+	
+	public int getMilesDrivenPerDay() {
+		return milesDrivenPerDay;
+	}
+
+	public void setMilesDrivenPerDay(int milesDrivenPerDay) {
+		this.milesDrivenPerDay = milesDrivenPerDay;
+	}
+
+	public double getCostPerGallon() {
+		return costPerGallon;
+	}
+
+	public void setCostPerGallon(double costPerGallon) {
+		this.costPerGallon = costPerGallon;
+	}
+
+	public int getAvgMilesPerGallon() {
+		return avgMilesPerGallon;
+	}
+
+	public void setAvgMilesPerGallon(int avgMilesPerGallon) {
+		this.avgMilesPerGallon = avgMilesPerGallon;
+	}
+
+	public int getParkingFeePerDay() {
+		return parkingFeePerDay;
+	}
+
+	public void setParkingFeePerDay(int parkingFeePerDay) {
+		this.parkingFeePerDay = parkingFeePerDay;
+	}
+
+	public int getTollPerDay() {
+		return tollPerDay;
+	}
+
+	public void setTollPerDay(int tollPerDay) {
+		this.tollPerDay = tollPerDay;
+	}
+
+	public void acceptData() {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the Total Miles Driven Per Day = ");
+		this.milesDrivenPerDay = s.nextInt();
+		System.out.println("Enter Average Miles Driven Per Gallon = ");
+		this.avgMilesPerGallon = s.nextInt();
+		System.out.println("Enter Cost Per Gallon Of Gasoline = ");
+		this.costPerGallon = s.nextDouble();	
+		System.out.println("Enter the Parkig Fees Per Day = ");
+		this.parkingFeePerDay = s.nextInt();
+		System.out.println("Enter Tolls Per Day = ");
+		this.tollPerDay = s.nextInt();
+		s.close();
+	}
+	
+	public void calculateDrivingCostPerDay() {
+		double totalCostPerDay = ((this.milesDrivenPerDay/this.avgMilesPerGallon)*this.costPerGallon)+this.parkingFeePerDay+this.tollPerDay;
+		System.out.println("Total Cost of Driving Per Day = "+totalCostPerDay);
+	}
+
+}
