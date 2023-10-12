@@ -1,0 +1,15 @@
+package assign2_2;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		
+		Employee employee = new Employee("Chetan","Arote",10000);
+		employee.displayData();
+		
+		Employee employee1 = new Employee();
+		employee1.acceptData();
+		employee.displayData();
+	}
+
+}

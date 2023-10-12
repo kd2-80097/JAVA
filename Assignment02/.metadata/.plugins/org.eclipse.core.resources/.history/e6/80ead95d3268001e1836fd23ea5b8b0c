@@ -1,0 +1,88 @@
+package assign2_1;
+
+import java.util.Scanner;
+
+public class Invoice 
+{
+	private String partNo;
+	private String partDescript;
+	private int partQuantity;
+	private double pricePerPart;
+
+	public Invoice() 
+	{
+		this.partNo = "--";
+		this.partDescript = "--";
+		this.partQuantity = 0;
+		this.pricePerPart = 0.00;
+	}
+
+	public String getPartNo() 
+	{
+		return partNo;
+	}
+
+	public void setPartNo(String partNo) 
+	{
+		this.partNo = partNo;
+	}
+
+	public String getPartDescript() 
+	{
+		return partDescript;
+	}
+
+	public void setPartDescript(String partDescript) 
+	{
+		this.partDescript = partDescript;
+	}
+
+	public int getPartQuantity() 
+	{
+		return partQuantity;
+	}
+
+	public void setPartQuantity(int partQuantity) 
+	{
+		this.partQuantity = partQuantity;
+	}
+
+	public double getPricePerPart() 
+	{
+		return pricePerPart;
+	}
+
+	public void setPricePerPart(double pricePerPart) {
+		this.pricePerPart = pricePerPart;
+	}
+
+    
+	Scanner s = new Scanner(System.in);
+	public void acceptData() 
+	{
+		System.out.println("**********************************");
+		System.out.println("----Please enter the Invoice Details----");
+		System.out.println("Part N0. = ");
+		this.partNo = s.nextLine();
+		System.out.println("Part Description ");
+		this.partDescript = s.nextLine();
+		System.out.println("Quantity of Parts = ");
+		if(s.hasNextInt())
+		{
+		this.partQuantity = s.nextInt();
+		}
+		System.out.println("Price per Part = ");
+		this.pricePerPart = s.nextDouble();
+	}
+	
+	public void displayData() 
+	{
+		System.out.println("**********************************");
+		System.out.println("-----------------Invoice Details-----------------");
+		System.out.println("Part No : "+this.getPartNo());
+		System.out.println("Part Description : "+this.getPartDescript());
+		System.out.println("Quantity : "+this.partQuantity);
+		System.out.println("Per Part Price : "+this.pricePerPart);
+		System.out.println("Total Bill is "+(this.getPartQuantity()*this.getPricePerPart()));
+	}
+}

@@ -1,0 +1,29 @@
+package tester;
+import com.app.geometry.*;
+
+public class TestPoint {
+
+	public static void main(String[] args) {
+		
+		Point2D p1 = new Point2D(2.3,1.2);
+		System.out.println(p1.getDetails());
+		Point2D p2 = new Point2D(-4.5,4.2);
+		System.out.println(p2.getDetails());
+		if(p1.equals(p2))
+			System.out.println("Both are at same location");
+		else
+		System.out.println("Both are at different locations at distance = "+p1.calculateDistance(p2));
+		Point2D p3 = new Point2D();
+		p3.acceptData();
+		System.out.println(p3.getDetails());
+		Point2D p4 = new Point2D();
+		p4.acceptData();
+		System.out.println(p4.getDetails());
+		if(p3.equals(p4))
+			System.out.println("Both are at the same location");
+		else
+		System.out.println("Both are at different locations at distance = "+p3.calculateDistance(p4));
+		
+	}
+
+}

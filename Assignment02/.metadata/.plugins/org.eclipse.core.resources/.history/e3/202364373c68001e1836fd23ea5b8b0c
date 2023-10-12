@@ -1,0 +1,20 @@
+package assign2_3;
+
+public class DateTest {
+
+	public static void main(String[] args) {
+
+		Date d1 = new Date();
+		d1.displaytData();
+		Date d2 = new Date(10,10,2023);
+		d2.displaytData();
+		d2.setDay(15);
+		System.out.println("Day : "+d2.getDay());
+		d2.setMonth(12);
+		System.out.println("Month : "+d2.getMonth());
+		d2.setYear(2024);
+		System.out.println("Year : "+d2.getYear());
+		d2.displaytData();
+	}
+
+}

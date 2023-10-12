@@ -1,0 +1,14 @@
+package assign2_1;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Invoice invoice = new Invoice();
+		invoice.displayData();
+		invoice.acceptData();
+		invoice.displayData();
+
+	}
+
+}
