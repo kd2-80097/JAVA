@@ -45,13 +45,14 @@ import java.util.Scanner;
 			this.y_coordinate = y_coordinate;
 		}
         
-		Scanner s = new Scanner(System.in);
+		
+		
 		public void acceptData() {
+			Scanner s = new Scanner(System.in);
 			System.out.println("Enter X coordinate = ");
 			this.x_coordinate = s.nextDouble();
 			System.out.println("Enter Y coordinate = ");
 			this.y_coordinate = s.nextDouble();
-			s.close();
 		}
 		
 		@Override
