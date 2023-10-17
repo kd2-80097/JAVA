@@ -26,8 +26,10 @@ public class Book {
 		this.isbn = sc.nextLine();
 		System.out.println("Enter the Price = ");
 		this.price = sc.nextDouble();
+		
 		System.out.println("Enter the Author Name = ");
-		this.authorName = sc.nextLine();
+		this.authorName = sc.next();
+		
 		System.out.println("Enter the Quantity = ");
 	    this.quantity = sc.nextInt();
 	}
@@ -69,4 +71,16 @@ public class Book {
 		return "Book [ isbn: "+this.isbn+",price: "+this.price+",authorName: "+this.authorName+",quantity: "+this.quantity;
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		if(!(obj instanceof Book))
+		return false;
+		Book bo = (Book) obj;
+		if(this.isbn.equals(bo.isbn)) {
+			return true;
+		}
+		else {
+		return false;
+		}
+	}
 }
