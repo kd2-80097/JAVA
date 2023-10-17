@@ -1,0 +1,11 @@
+package com.app.fruit;
+
+public class Apple {
+
+	public static void main(String[] args) {
+
+		Fruit f = new Fruit("Apple","red",50.36,true);
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.app.fruit;
+
+public class Mango extends Fruit {
+
+	public Mango() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Mango(String name, String color, double weight, boolean isFresh) {
+		super(name, color, weight, isFresh);
+		// TODO Auto-generated constructor stub
+	}
+
+}
