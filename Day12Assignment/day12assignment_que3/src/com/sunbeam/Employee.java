@@ -1,5 +1,7 @@
 package com.sunbeam;
 
+import java.util.Scanner;
+
 public class Employee {
 	private int empid;
 	private String name;
@@ -37,6 +39,16 @@ public class Employee {
 
 	public void setSalary(double salary) {
 		this.salary = salary;
+	}
+	
+	public void acceptData(Scanner sc) {
+		System.out.println("Enter the Employee Id :");
+		this.empid = sc.nextInt();
+		System.out.println("Enter the Employee Name : ");
+		sc.nextLine();
+		this.name = sc.nextLine();
+		System.out.println("Enter theEmployee Salary : ");
+		this.salary = sc.nextDouble();
 	}
 	
 	@Override
