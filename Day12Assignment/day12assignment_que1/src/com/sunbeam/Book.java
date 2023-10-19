@@ -74,7 +74,11 @@ public class Book {
 			return true;
 		if(obj instanceof Book) {
 			Book other = (Book) obj;
-			if(this.isbn.equals(other.isbn))
+		if(this.isbn.equals(other.isbn))
+	/*		if(this.isbn.compareTo(other.isbn)) 
+				it will return -1 if this.isbn < other.isbn 
+				and return 1 if this.isbn > other.isbn
+				and will return if this.isbn == other.isbn      */
 				return true;
 		}
 		return false;

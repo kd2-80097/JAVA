@@ -42,10 +42,8 @@ public class TestMain {
 				}
 				break;
 			case 2:
-			       itr = list.listIterator();
-			    	while(itr.hasNext()) {
-			    		Book ele = itr.next();
-			    		System.out.println(ele);
+			    	for (int i=0 ;i < list.size();i++) {
+			    		System.out.println(list.get(i));
 			    	}
 			    break;	
 			case 3:
