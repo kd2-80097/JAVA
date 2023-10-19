@@ -35,14 +35,14 @@ public class TestMain {
 			System.out.println(b);
 		}
 		
-		System.out.println();
-		
-		System.out.println("Using DescendingIterator");
-		Iterator<Book> itr = set1.descendingIterator();
-		while(itr.hasNext()) {
-			Book b = itr.next();
-			System.out.println(b);
-		}
+//		System.out.println();
+//		
+//		System.out.println("Using DescendingIterator");
+//		Iterator<Book> itr = set1.descendingIterator();
+//		while(itr.hasNext()) {
+//			Book b = itr.next();
+//			System.out.println(b);
+//		}
 	}
 
 }
