@@ -37,7 +37,7 @@ public class TestMain {
 					bk.setQuantity(bk.getQuantity()+b.getQuantity());
 				}	
 				else {
-					System.out.println("Book Added");
+					System.out.println("Book is not Present");
 					list.add(b);
 				}
 				break;
